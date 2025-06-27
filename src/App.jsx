@@ -1,34 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import HelloComponent from './components/helloworld/HelloComponent'
+import UsercardComponent from './components/usercard/UsercardComponent'
+import Counter_Component from './components/Counter_App/Counter_Component'
+import ToggleComponet from './components/toggle_button/ToggleComponet'
+import Form_component from './components/input_handling/Form_component'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      {/* <HelloComponent /> */} 
+      {/* <UsercardComponent name = "Mathan" email="test@gmail.com" role = "Developer"/>
+      <UsercardComponent name = "G2Editz" email="test@gmail.com" role = "Editor"/>
+      <UsercardComponent name = "Mathan" email="test@gmail.com" role = "Developer"/> */}
+
+      {/* <Counter_Component /> */}
+
+      {/* <ToggleComponet/> */}
+      <Form_component/>
+
+    </div>
   )
 }
 
