@@ -4,6 +4,7 @@ import UsercardComponent from './components/usercard/UsercardComponent'
 import Counter_Component from './components/Counter_App/Counter_Component'
 import ToggleComponet from './components/toggle_button/ToggleComponet'
 import Form_component from './components/input_handling/Form_component'
+import TodoPageComponent from './components/input_handling/todotask/TodoPageComponent'
 
 const App = () => {
   return (
@@ -16,7 +17,9 @@ const App = () => {
       {/* <Counter_Component /> */}
 
       {/* <ToggleComponet/> */}
-      <Form_component/>
+      {/* <Form_component/> */}
+
+      <TodoPageComponent />
 
     </div>
   )
